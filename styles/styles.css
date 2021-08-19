@@ -1,0 +1,249 @@
+/* DESKTOP DESIGN */
+
+body {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.topCard {
+    width: 100%;
+    max-height: 50%;
+}
+
+.leftCard {
+    max-width: 27%;
+    position: relative;
+    left: 190px;
+    top: -250px;
+}
+.title{
+    margin: auto auto 1.5rem auto;
+    font-size: 3rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-family: 'Spartan', sans-serif;
+}
+
+.principalParagraph {
+    line-height: 25px;
+    font-size: 1rem;
+    color: hsl(303, 10%, 53%);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+}
+
+.rating {
+    width: 490px;
+    height: 70px;
+    display: block;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin: 17px;
+    z-index: 10;
+}
+
+.reviews {
+    position: relative;
+    left: 900px;
+    bottom: 510px;
+}
+.reportGuru{
+    position: relative;
+    left: 950px;
+    bottom: 510px;
+}
+.bestTech{
+    position: relative;
+    left: 1000px;
+    bottom: 510px;
+}
+
+.p__reviews, .p__reportGuru, .p__bestTech{
+    display: inline-block;
+    position: relative;
+    right: -100px;
+    top: 12px;
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+.images{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    left: 45px;
+}
+
+.bottomCard{
+    position: relative;
+    bottom: 300px;
+}
+
+.bckBottom{
+    position: relative;
+    left: 570px;
+    bottom: 1420px;
+}
+
+.purpleCards {
+    background-color: hsl(300, 43%, 22%);
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+}
+.firstCard {
+    position: relative;
+    left: 190px;
+    bottom: 150px;
+}
+.secondCard {
+    position: relative;
+    left: 620px;
+    bottom: 410px;
+}
+.thirdCard{
+    position: relative;
+    left: 1050px;
+    bottom: 660px;
+}
+.profileImg{
+    border-radius: 50%;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    top: 43px;
+    left: 38px;
+}
+.customerName{
+    display: block;
+    position: relative;
+    bottom: 20px;
+    left: -35px;
+    text-align: center;
+    color: hsl(300, 24%, 96%);
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 100;
+}
+.verified{
+    display: block;
+    position: relative;
+    bottom: 20px;
+    left: -35px;
+    text-align: center;
+    color: hsl(333, 80%, 67%);
+    font-size: 13px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 100;
+    opacity: 90%;
+}
+.description{
+    text-align: center;
+    color: hsl(300, 24%, 96%);
+    font-family: 'Spartan', sans-serif;
+    max-width: 85%;
+    font-size: 15px;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 950px) {
+    body {
+        overflow: scroll;
+    }
+    
+    .topCard {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        max-height: auto;
+    }
+    
+    .leftCard {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 90%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    
+    .principalParagraph {
+        font-size: .75rem;
+    }
+    
+    .rating {
+        width: 300px;
+        height: 80px;
+        margin: 55px auto 15px auto;
+    }
+    
+    .reviews {
+        left: 190px;
+        bottom: 300px;
+    }
+    .reportGuru{
+        left: 190px;
+        bottom: 355px;
+    }
+    .bestTech{
+        left: 190px;
+        bottom: 410px;
+    }
+    
+    .p__reviews{
+        right: -43px;
+    }
+    .p__reportGuru{
+        right: -28px;
+    }
+    .p__bestTech{
+        right: -45px;
+    }
+    
+    .images{
+        left: 100px;
+    }
+    
+    .bottomCard{
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        bottom: 250px;
+    }
+    
+    .purpleCards {
+        max-width: 100%;
+    }
+    .firstCard {
+        position: relative;
+        left: 190px;
+        bottom: 150px;
+    }
+    .secondCard {
+        left: 190px;
+        bottom: 130px;
+    }
+    .thirdCard{
+        left: 190px;
+        bottom: 110px;
+    }
+    .customerName{
+        left: 10px;
+    }
+    .verified{
+        left: 10px;
+    }
+    .description{
+        font-size: 13px;
+    }
+}
